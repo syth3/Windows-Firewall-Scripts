@@ -36,8 +36,8 @@ New-NetFirewallRule -DisplayName "Windows Time In" -Direction Inbound -Action Al
 New-NetFirewallRule -DisplayName "Windows Time Out" -Direction Outbound -Action Allow -Protocol UDP -LocalPort 123
 
 # Allow ICMP
-New-NetFirewallRule -DisplayName “ICMP” -Direction Inbound -Action Allow -Protocol ICMPv4 -IcmpType 0,8
-New-NetFirewallRule -DisplayName “ICMP” -Direction Outbound -Action Allow -Protocol ICMPv4 -IcmpType 0,8
+New-NetFirewallRule -DisplayName "ICMP" -Direction Inbound -Action Allow -Protocol ICMPv4 -IcmpType 0,8
+New-NetFirewallRule -DisplayName "ICMP" -Direction Outbound -Action Allow -Protocol ICMPv4 -IcmpType 0,8
 
 # Allow Client Web Access
 New-NetFirewallRule -DisplayName "Web" -Direction Inbound -Action Allow -Protocol TCP -RemotePort 80,443
